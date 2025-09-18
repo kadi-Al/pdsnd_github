@@ -201,6 +201,7 @@ def display_data(df):
             break
 
 
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -210,6 +211,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
@@ -217,4 +219,4 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    main()
